@@ -1,0 +1,165 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.parent{
+  position: relative;
+  width: 95%;
+  height: 90%;
+  top: 30px;
+}
+
+.yello {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background-color: #FCC60C;
+  z-index: 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.cream {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  background-color: #FBE8B5;
+  z-index: 1;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.toppart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px;
+  z-index: 2;
+}
+.logo img {
+  width: 200px;
+}
+.menu {
+  height: 20px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.menu span {
+  height: 3px;
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+}
+
+.content {
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 50px;
+  z-index: 2;
+}
+
+.pikachu-info {
+  width: 25%;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+.pikachu-info h3 {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.pikachu-info h1 {
+  font-size: 6.5rem;
+  font-weight: 900;
+  letter-spacing: 0.35em;
+  letter-spacing: -0.02em;
+}
+
+.pikachu-image {
+  width: 150%;
+  height: auto;
+  transform: translate(-10%, 10%);
+  object-fit: contain;
+  z-index: 5;
+}
+.pikachu-image img{
+  width: 120%;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  transform: translateX(-10%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination .line {
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+}
+
+.pagination .numbers {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.slider-dots {
+  position: absolute;
+  top: 50%;
+  right: 3%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fecb00;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #000000;
+}
